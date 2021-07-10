@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A2CCFE7268DE8040016A13B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CCFE6268DE8040016A13B /* AppDelegate.swift */; };
 		5A2CCFE9268DE8040016A13B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CCFE8268DE8040016A13B /* SceneDelegate.swift */; };
-		5A2CCFEB268DE8040016A13B /* WordlScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CCFEA268DE8040016A13B /* WordlScrambleView.swift */; };
+		5A2CCFEB268DE8040016A13B /* WorldScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CCFEA268DE8040016A13B /* WorldScrambleView.swift */; };
 		5A2CCFED268DE8050016A13B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2CCFEC268DE8050016A13B /* Assets.xcassets */; };
 		5A2CCFF0268DE8050016A13B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2CCFEF268DE8050016A13B /* Preview Assets.xcassets */; };
 		5A2CCFF3268DE8050016A13B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2CCFF1268DE8050016A13B /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		5A2CCFE3268DE8040016A13B /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2CCFE6268DE8040016A13B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A2CCFE8268DE8040016A13B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A2CCFEA268DE8040016A13B /* WordlScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordlScrambleView.swift; sourceTree = "<group>"; };
+		5A2CCFEA268DE8040016A13B /* WorldScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScrambleView.swift; sourceTree = "<group>"; };
 		5A2CCFEC268DE8050016A13B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A2CCFEF268DE8050016A13B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A2CCFF2268DE8050016A13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				5A2CCFE6268DE8040016A13B /* AppDelegate.swift */,
 				5A2CCFE8268DE8040016A13B /* SceneDelegate.swift */,
-				5A2CCFEA268DE8040016A13B /* WordlScrambleView.swift */,
+				5A2CCFEA268DE8040016A13B /* WorldScrambleView.swift */,
 				5AE1AD6D268EDD7C00B16445 /* WorkingWithString.swift */,
 				5A2CCFFA268DEB160016A13B /* ListExample.swift */,
 				5A2CCFEC268DE8050016A13B /* Assets.xcassets */,
@@ -159,7 +159,7 @@
 				5A2CCFFB268DEB160016A13B /* ListExample.swift in Sources */,
 				5A2CCFE7268DE8040016A13B /* AppDelegate.swift in Sources */,
 				5A2CCFE9268DE8040016A13B /* SceneDelegate.swift in Sources */,
-				5A2CCFEB268DE8040016A13B /* WordlScrambleView.swift in Sources */,
+				5A2CCFEB268DE8040016A13B /* WorldScrambleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

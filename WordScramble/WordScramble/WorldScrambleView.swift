@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WordlScrambleView: View {
+struct WorldScrambleView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
@@ -120,6 +120,6 @@ struct WordlScrambleView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        WordlScrambleView()
+        WorldScrambleView()
     }
 }

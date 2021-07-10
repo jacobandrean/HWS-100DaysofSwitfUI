@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UnitMeasurementView: View {
     @State private var inputValue = "0"
     @State private var unitName = "Temperature"
     @State private var inputTemperature = UnitTemperature.celsius//"Celcius"
@@ -156,6 +156,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UnitMeasurementView()
     }
 }
