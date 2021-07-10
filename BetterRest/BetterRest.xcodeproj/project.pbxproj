@@ -10,7 +10,7 @@
 		5A5950B7268D844100C92B63 /* DateExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5950B6268D844100C92B63 /* DateExample.swift */; };
 		5A6EF239268989B90088047A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EF238268989B90088047A /* AppDelegate.swift */; };
 		5A6EF23B268989B90088047A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EF23A268989B90088047A /* SceneDelegate.swift */; };
-		5A6EF23D268989B90088047A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EF23C268989B90088047A /* ContentView.swift */; };
+		5A6EF23D268989B90088047A /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EF23C268989B90088047A /* BetterRestView.swift */; };
 		5A6EF23F268989BA0088047A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EF23E268989BA0088047A /* Assets.xcassets */; };
 		5A6EF242268989BA0088047A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EF241268989BA0088047A /* Preview Assets.xcassets */; };
 		5A6EF245268989BA0088047A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EF243268989BA0088047A /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		5A6EF235268989B90088047A /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6EF238268989B90088047A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A6EF23A268989B90088047A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A6EF23C268989B90088047A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A6EF23C268989B90088047A /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
 		5A6EF23E268989BA0088047A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A6EF241268989BA0088047A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A6EF244268989BA0088047A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			children = (
 				5A6EF238268989B90088047A /* AppDelegate.swift */,
 				5A6EF23A268989B90088047A /* SceneDelegate.swift */,
-				5A6EF23C268989B90088047A /* ContentView.swift */,
+				5A6EF23C268989B90088047A /* BetterRestView.swift */,
 				5A5950B6268D844100C92B63 /* DateExample.swift */,
 				5A6EF23E268989BA0088047A /* Assets.xcassets */,
 				5A6EF243268989BA0088047A /* LaunchScreen.storyboard */,
@@ -155,7 +155,7 @@
 				5A6EF23B268989B90088047A /* SceneDelegate.swift in Sources */,
 				5A94CDA7268DA0C1006AB552 /* SleepCalculator.mlmodel in Sources */,
 				5A5950B7268D844100C92B63 /* DateExample.swift in Sources */,
-				5A6EF23D268989B90088047A /* ContentView.swift in Sources */,
+				5A6EF23D268989B90088047A /* BetterRestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
