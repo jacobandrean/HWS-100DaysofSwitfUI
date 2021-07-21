@@ -67,7 +67,6 @@ struct EdutainmentView: View {
             
             Button(action: {
                 isRunning = true
-                print("hi")
             }, label: {
                 HStack {
                     Spacer()
@@ -81,22 +80,45 @@ struct EdutainmentView: View {
             }
         }
         .fullScreenCover(isPresented: $isRunning) {
-            GameView()
+            GameView(isRunning: $isRunning, questions: questions)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        EdutainmentView()
+//        EdutainmentView()
+        GameView(isRunning: .constant(true), questions: [Multiplication(first: 2, second: 4)])
     }
 }
 
 struct GameView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Binding var isRunning: Bool
+    let questions: [Multiplication]
+    @State private var answer = ""
+    @State private var index = 0
+    @State private var score = 0
+    
     var body: some View {
-        Button("Dismiss") {
-            presentationMode.wrappedValue.dismiss()
+        Form {
+            Text("\(questions[index].first) * \(questions[index].second) = \(questions[index].answer)")
+            TextField("Answer", text: $answer)
+            Button("Next") {
+                if answer == "\(questions[index].answer)" {
+                    score += 1
+                }
+                if index < questions.count-1 {
+                    index += 1
+                } else {
+                    isRunning = false
+                }
+            }
+            Text("\(score)")
+//            Button("Dismiss") {
+//                presentationMode.wrappedValue.dismiss()
+//                isRunning = false
+//            }
         }
     }
 }
