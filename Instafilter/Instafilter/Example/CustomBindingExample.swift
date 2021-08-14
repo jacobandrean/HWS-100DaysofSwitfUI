@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomBindingView: View {
+struct CustomBindingExample: View {
     @State private var blurAmount: CGFloat = 0 {
         didSet {
             print("New value is \(blurAmount)")
@@ -48,6 +48,6 @@ struct CustomBindingView: View {
 
 struct CustomBindingView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomBindingView()
+        CustomBindingExample()
     }
 }
