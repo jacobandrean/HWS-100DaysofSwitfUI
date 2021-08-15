@@ -14,6 +14,14 @@
 		5A4406A426C7BFE800C8C94B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4406A326C7BFE800C8C94B /* Preview Assets.xcassets */; };
 		5A4406A726C7BFE800C8C94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4406A526C7BFE800C8C94B /* LaunchScreen.storyboard */; };
 		5A4406AF26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4406AE26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift */; };
+		5ABA415D26C9560D009C8AE8 /* DocumentDirectoryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA415C26C9560D009C8AE8 /* DocumentDirectoryExample.swift */; };
+		5ABA415F26C95774009C8AE8 /* EnumSwitchingViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA415E26C95774009C8AE8 /* EnumSwitchingViewExample.swift */; };
+		5ABA416126C9588C009C8AE8 /* MapViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416026C9588C009C8AE8 /* MapViewExample.swift */; };
+		5ABA416326C96C1A009C8AE8 /* TouchIDFaceIDExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416226C96C1A009C8AE8 /* TouchIDFaceIDExample.swift */; };
+		5ABA416526C96DBE009C8AE8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416426C96DBE009C8AE8 /* MapView.swift */; };
+		5ABA416726C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416626C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift */; };
+		5ABA416926C98239009C8AE8 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416826C98239009C8AE8 /* EditView.swift */; };
+		5ABA416B26C983D6009C8AE8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416A26C983D6009C8AE8 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		5A4406A626C7BFE800C8C94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A4406A826C7BFE800C8C94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A4406AE26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingConformancetoComparableExample.swift; sourceTree = "<group>"; };
+		5ABA415C26C9560D009C8AE8 /* DocumentDirectoryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDirectoryExample.swift; sourceTree = "<group>"; };
+		5ABA415E26C95774009C8AE8 /* EnumSwitchingViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSwitchingViewExample.swift; sourceTree = "<group>"; };
+		5ABA416026C9588C009C8AE8 /* MapViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewExample.swift; sourceTree = "<group>"; };
+		5ABA416226C96C1A009C8AE8 /* TouchIDFaceIDExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDFaceIDExample.swift; sourceTree = "<group>"; };
+		5ABA416426C96DBE009C8AE8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5ABA416626C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
+		5ABA416826C98239009C8AE8 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		5ABA416A26C983D6009C8AE8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,14 @@
 				5A44069A26C7BFE600C8C94B /* AppDelegate.swift */,
 				5A44069C26C7BFE600C8C94B /* SceneDelegate.swift */,
 				5A44069E26C7BFE600C8C94B /* ContentView.swift */,
+				5ABA416426C96DBE009C8AE8 /* MapView.swift */,
+				5ABA416626C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift */,
+				5ABA416826C98239009C8AE8 /* EditView.swift */,
+				5ABA416A26C983D6009C8AE8 /* Result.swift */,
+				5ABA416226C96C1A009C8AE8 /* TouchIDFaceIDExample.swift */,
+				5ABA416026C9588C009C8AE8 /* MapViewExample.swift */,
+				5ABA415E26C95774009C8AE8 /* EnumSwitchingViewExample.swift */,
+				5ABA415C26C9560D009C8AE8 /* DocumentDirectoryExample.swift */,
 				5A4406AE26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift */,
 				5A4406A026C7BFE800C8C94B /* Assets.xcassets */,
 				5A4406A526C7BFE800C8C94B /* LaunchScreen.storyboard */,
@@ -148,10 +172,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ABA416126C9588C009C8AE8 /* MapViewExample.swift in Sources */,
+				5ABA415D26C9560D009C8AE8 /* DocumentDirectoryExample.swift in Sources */,
+				5ABA416926C98239009C8AE8 /* EditView.swift in Sources */,
 				5A4406AF26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift in Sources */,
+				5ABA416726C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				5A44069B26C7BFE600C8C94B /* AppDelegate.swift in Sources */,
+				5ABA416B26C983D6009C8AE8 /* Result.swift in Sources */,
 				5A44069D26C7BFE600C8C94B /* SceneDelegate.swift in Sources */,
+				5ABA416326C96C1A009C8AE8 /* TouchIDFaceIDExample.swift in Sources */,
 				5A44069F26C7BFE600C8C94B /* ContentView.swift in Sources */,
+				5ABA416526C96DBE009C8AE8 /* MapView.swift in Sources */,
+				5ABA415F26C95774009C8AE8 /* EnumSwitchingViewExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
