@@ -22,6 +22,7 @@
 		5ABA416726C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416626C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift */; };
 		5ABA416926C98239009C8AE8 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416826C98239009C8AE8 /* EditView.swift */; };
 		5ABA416B26C983D6009C8AE8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA416A26C983D6009C8AE8 /* Result.swift */; };
+		5AD6884B26DFA9EA00B829AD /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD6884A26DFA9EA00B829AD /* MKPointAnnotation-Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5ABA416626C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
 		5ABA416826C98239009C8AE8 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		5ABA416A26C983D6009C8AE8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		5AD6884A26DFA9EA00B829AD /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +81,10 @@
 				5A44069E26C7BFE600C8C94B /* ContentView.swift */,
 				5ABA416426C96DBE009C8AE8 /* MapView.swift */,
 				5ABA416626C981E0009C8AE8 /* MKPointAnnotation-ObservableObject.swift */,
+				5AD6884A26DFA9EA00B829AD /* MKPointAnnotation-Codable.swift */,
 				5ABA416826C98239009C8AE8 /* EditView.swift */,
 				5ABA416A26C983D6009C8AE8 /* Result.swift */,
-				5ABA416226C96C1A009C8AE8 /* TouchIDFaceIDExample.swift */,
-				5ABA416026C9588C009C8AE8 /* MapViewExample.swift */,
-				5ABA415E26C95774009C8AE8 /* EnumSwitchingViewExample.swift */,
-				5ABA415C26C9560D009C8AE8 /* DocumentDirectoryExample.swift */,
-				5A4406AE26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift */,
+				5AD6884C26DFB13D00B829AD /* Example */,
 				5A4406A026C7BFE800C8C94B /* Assets.xcassets */,
 				5A4406A526C7BFE800C8C94B /* LaunchScreen.storyboard */,
 				5A4406A826C7BFE800C8C94B /* Info.plist */,
@@ -100,6 +99,18 @@
 				5A4406A326C7BFE800C8C94B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AD6884C26DFB13D00B829AD /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				5ABA416226C96C1A009C8AE8 /* TouchIDFaceIDExample.swift */,
+				5ABA416026C9588C009C8AE8 /* MapViewExample.swift */,
+				5ABA415E26C95774009C8AE8 /* EnumSwitchingViewExample.swift */,
+				5ABA415C26C9560D009C8AE8 /* DocumentDirectoryExample.swift */,
+				5A4406AE26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ABA416126C9588C009C8AE8 /* MapViewExample.swift in Sources */,
+				5AD6884B26DFA9EA00B829AD /* MKPointAnnotation-Codable.swift in Sources */,
 				5ABA415D26C9560D009C8AE8 /* DocumentDirectoryExample.swift in Sources */,
 				5ABA416926C98239009C8AE8 /* EditView.swift in Sources */,
 				5A4406AF26C7C4B500C8C94B /* AddingConformancetoComparableExample.swift in Sources */,
