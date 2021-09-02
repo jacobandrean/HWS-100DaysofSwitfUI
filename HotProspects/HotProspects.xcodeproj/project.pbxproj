@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,19 @@
 		5A497A9F26E0D4D700752643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A497A9E26E0D4D700752643 /* Assets.xcassets */; };
 		5A497AA226E0D4D700752643 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A497AA126E0D4D700752643 /* Preview Assets.xcassets */; };
 		5A497AA526E0D4D700752643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A497AA326E0D4D700752643 /* LaunchScreen.storyboard */; };
+		5A497AAD26E0D8D400752643 /* EnvironmentObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497AAC26E0D8D400752643 /* EnvironmentObjectExample.swift */; };
+		5A497AAF26E0DABA00752643 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497AAE26E0DABA00752643 /* TabViewExample.swift */; };
+		5A497AB126E0E00800752643 /* ResultTypeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497AB026E0E00800752643 /* ResultTypeExample.swift */; };
+		5A497AB326E0E13200752643 /* ObjectWillChangeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497AB226E0E13200752643 /* ObjectWillChangeExample.swift */; };
+		5A497AB526E0E22F00752643 /* ImageInterpolationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497AB426E0E22E00752643 /* ImageInterpolationExample.swift */; };
+		5A4A71E926E10CAC00435678 /* ContextMenuExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A71E826E10CAC00435678 /* ContextMenuExample.swift */; };
+		5A4A71EB26E10EFA00435678 /* ScheduleNotificationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A71EA26E10EFA00435678 /* ScheduleNotificationExample.swift */; };
+		5A4A71EE26E1104600435678 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5A4A71ED26E1104600435678 /* SamplePackage */; };
+		5A4A71F026E1119A00435678 /* ThirdPartySDKExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A71EF26E1119A00435678 /* ThirdPartySDKExample.swift */; };
+		5A4A71F326E1120C00435678 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A71F226E1120C00435678 /* ProspectsView.swift */; };
+		5A4A71F526E1121300435678 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A71F426E1121300435678 /* MeView.swift */; };
+		5A4A71F726E113BA00435678 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A71F626E113BA00435678 /* Prospect.swift */; };
+		5A4A71FA26E11ADC00435678 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 5A4A71F926E11ADC00435678 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,17 @@
 		5A497AA126E0D4D700752643 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A497AA426E0D4D700752643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A497AA626E0D4D700752643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A497AAC26E0D8D400752643 /* EnvironmentObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectExample.swift; sourceTree = "<group>"; };
+		5A497AAE26E0DABA00752643 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
+		5A497AB026E0E00800752643 /* ResultTypeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypeExample.swift; sourceTree = "<group>"; };
+		5A497AB226E0E13200752643 /* ObjectWillChangeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectWillChangeExample.swift; sourceTree = "<group>"; };
+		5A497AB426E0E22E00752643 /* ImageInterpolationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationExample.swift; sourceTree = "<group>"; };
+		5A4A71E826E10CAC00435678 /* ContextMenuExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuExample.swift; sourceTree = "<group>"; };
+		5A4A71EA26E10EFA00435678 /* ScheduleNotificationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleNotificationExample.swift; sourceTree = "<group>"; };
+		5A4A71EF26E1119A00435678 /* ThirdPartySDKExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartySDKExample.swift; sourceTree = "<group>"; };
+		5A4A71F226E1120C00435678 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		5A4A71F426E1121300435678 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		5A4A71F626E113BA00435678 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4A71FA26E11ADC00435678 /* CodeScanner in Frameworks */,
+				5A4A71EE26E1104600435678 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +84,11 @@
 			children = (
 				5A497A9826E0D4D500752643 /* AppDelegate.swift */,
 				5A497A9A26E0D4D500752643 /* SceneDelegate.swift */,
+				5A4A71F626E113BA00435678 /* Prospect.swift */,
 				5A497A9C26E0D4D500752643 /* ContentView.swift */,
+				5A4A71F226E1120C00435678 /* ProspectsView.swift */,
+				5A4A71F426E1121300435678 /* MeView.swift */,
+				5A4A71F126E111CB00435678 /* Example */,
 				5A497A9E26E0D4D700752643 /* Assets.xcassets */,
 				5A497AA326E0D4D700752643 /* LaunchScreen.storyboard */,
 				5A497AA626E0D4D700752643 /* Info.plist */,
@@ -73,6 +103,21 @@
 				5A497AA126E0D4D700752643 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A4A71F126E111CB00435678 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				5A4A71EF26E1119A00435678 /* ThirdPartySDKExample.swift */,
+				5A4A71EA26E10EFA00435678 /* ScheduleNotificationExample.swift */,
+				5A4A71E826E10CAC00435678 /* ContextMenuExample.swift */,
+				5A497AB426E0E22E00752643 /* ImageInterpolationExample.swift */,
+				5A497AB226E0E13200752643 /* ObjectWillChangeExample.swift */,
+				5A497AB026E0E00800752643 /* ResultTypeExample.swift */,
+				5A497AAE26E0DABA00752643 /* TabViewExample.swift */,
+				5A497AAC26E0D8D400752643 /* EnvironmentObjectExample.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +136,10 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				5A4A71ED26E1104600435678 /* SamplePackage */,
+				5A4A71F926E11ADC00435678 /* CodeScanner */,
+			);
 			productName = HotProspects;
 			productReference = 5A497A9526E0D4D500752643 /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +167,10 @@
 				Base,
 			);
 			mainGroup = 5A497A8C26E0D4D500752643;
+			packageReferences = (
+				5A4A71EC26E1104600435678 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+				5A4A71F826E11ADC00435678 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 5A497A9626E0D4D500752643 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,9 +198,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4A71F326E1120C00435678 /* ProspectsView.swift in Sources */,
 				5A497A9926E0D4D500752643 /* AppDelegate.swift in Sources */,
+				5A497AB526E0E22F00752643 /* ImageInterpolationExample.swift in Sources */,
+				5A4A71F726E113BA00435678 /* Prospect.swift in Sources */,
+				5A497AB326E0E13200752643 /* ObjectWillChangeExample.swift in Sources */,
+				5A497AAD26E0D8D400752643 /* EnvironmentObjectExample.swift in Sources */,
 				5A497A9B26E0D4D500752643 /* SceneDelegate.swift in Sources */,
+				5A497AB126E0E00800752643 /* ResultTypeExample.swift in Sources */,
+				5A4A71EB26E10EFA00435678 /* ScheduleNotificationExample.swift in Sources */,
 				5A497A9D26E0D4D500752643 /* ContentView.swift in Sources */,
+				5A4A71E926E10CAC00435678 /* ContextMenuExample.swift in Sources */,
+				5A497AAF26E0DABA00752643 /* TabViewExample.swift in Sources */,
+				5A4A71F026E1119A00435678 /* ThirdPartySDKExample.swift in Sources */,
+				5A4A71F526E1121300435678 /* MeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +409,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A4A71EC26E1104600435678 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		5A4A71F826E11ADC00435678 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A4A71ED26E1104600435678 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A4A71EC26E1104600435678 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+		5A4A71F926E11ADC00435678 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A4A71F826E11ADC00435678 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A497A8D26E0D4D500752643 /* Project object */;
 }
