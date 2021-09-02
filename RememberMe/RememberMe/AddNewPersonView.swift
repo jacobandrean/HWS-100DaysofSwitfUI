@@ -15,7 +15,6 @@ struct AddNewPersonView: View {
     @Binding var people: [Person]
     
     let locationFetcher = LocationFetcher()
-    @State private var location: Location?
     
     var body: some View {
         VStack {
