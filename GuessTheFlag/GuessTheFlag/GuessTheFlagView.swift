@@ -28,6 +28,10 @@ struct FlagImage: View {
 }
 
 struct GuessTheFlagView: View {
+    let labels = [
+        "Estonia": "Flag with thre horizontal stripes of equal size. Top stripe blue, middle strope black, bottom stripe white",
+        "France": "Flag with thre vertical stripes of equal size. Top stripe blue, middle strope black, bottom stripe white"
+    ]
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var score = 0
@@ -67,6 +71,7 @@ struct GuessTheFlagView: View {
                         }
                     }) {
                         FlagImage(image: self.countries[number], animationAmount: animationAmount, isCorrect: number == correctAnswer, offsetValue: offsetValue)
+                            .accessibility(label: Text(self.labels[self.countries[number], default: "Unknown flag"]))
                     }
                     .opacity(number != correctAnswer && opacityIsAllowed ? 0.25 : 1)
                 }
