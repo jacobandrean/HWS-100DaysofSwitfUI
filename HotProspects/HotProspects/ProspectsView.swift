@@ -15,6 +15,7 @@ struct ProspectsView: View {
     }
     
     @EnvironmentObject var prospects: Prospects
+    @State private var isShowingActionSheet = false
     @State private var isShowingScanner = false
     let filter: FilterType
     
@@ -44,11 +45,19 @@ struct ProspectsView: View {
         NavigationView {
             List {
                 ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.emailAddress)
-                            .foregroundColor(.secondary)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.emailAddress)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        Spacer()
+                        
+                        if prospect.isContacted {
+                            Image(systemName: "checkmark.circle")
+                        }
                     }
                     .contextMenu(menuItems: {
                         Button(prospect.isContacted ? "Mark Uncontacted" : "Mark Contacted") {
@@ -65,6 +74,10 @@ struct ProspectsView: View {
             }
             .navigationBarTitle(title)
             .navigationBarItems(
+                leading:
+                    Button("Sort by") {
+                        isShowingActionSheet = true
+                    },
                 trailing:
                     Button(action: {
 //                        let prospect = Prospect()
@@ -80,6 +93,16 @@ struct ProspectsView: View {
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Jacob Andrean\njacob.andrean@icloud.com", completion: self.handleScan)
             }
+            .actionSheet(isPresented: $isShowingActionSheet, content: {
+                ActionSheet(title: Text("Sort by"), message: Text("Sorting with"), buttons: [
+                    .default(Text("Name"), action: {
+                        self.prospects.sortBy(sortType: .name)
+                    }),
+                    .default(Text("Recent"), action: {
+                        self.prospects.sortBy(sortType: .recent)
+                    })
+                ])
+            })
         }
     }
     
