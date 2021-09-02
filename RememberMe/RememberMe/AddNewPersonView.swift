@@ -14,6 +14,9 @@ struct AddNewPersonView: View {
     @State private var name = ""
     @Binding var people: [Person]
     
+    let locationFetcher = LocationFetcher()
+    @State private var location: Location?
+    
     var body: some View {
         VStack {
             Image(uiImage: uiImage != nil ? uiImage! : UIImage(systemName: "person")!)
@@ -35,12 +38,20 @@ struct AddNewPersonView: View {
             ImagePicker(uiImage: $uiImage)
         }
         .onAppear {
+            locationFetcher.start()
             showingImagePicker = true
         }
     }
     
+    func getLocation() -> Location? {
+        if let location = locationFetcher.lastKnownLocation {
+            return Location(latitude: location.latitude, longitude: location.longitude)
+        }
+        return nil
+    }
+    
     func addPerson() {
-        people.append(Person(name: name, imageData: uiImage?.jpegData(compressionQuality: 0.8) ?? Data()))
+        people.append(Person(name: name, imageData: uiImage?.jpegData(compressionQuality: 0.8) ?? Data(), location: getLocation()))
         people = people.sorted()
         saveDate()
         presentationMode.wrappedValue.dismiss()

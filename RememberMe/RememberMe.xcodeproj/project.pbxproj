@@ -16,6 +16,7 @@
 		5A497A8526E0C58900752643 /* AddNewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497A8426E0C58900752643 /* AddNewPersonView.swift */; };
 		5A497A8726E0C5A200752643 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497A8626E0C5A200752643 /* ImagePicker.swift */; };
 		5A497A8926E0C5B800752643 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497A8826E0C5B800752643 /* Person.swift */; };
+		5A497A8B26E0C99A00752643 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A497A8A26E0C99A00752643 /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5A497A8426E0C58900752643 /* AddNewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPersonView.swift; sourceTree = "<group>"; };
 		5A497A8626E0C5A200752643 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		5A497A8826E0C5B800752643 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		5A497A8A26E0C99A00752643 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				5A497A7426E0AD7F00752643 /* ContentView.swift */,
 				5A497A8626E0C5A200752643 /* ImagePicker.swift */,
 				5A497A8426E0C58900752643 /* AddNewPersonView.swift */,
+				5A497A8A26E0C99A00752643 /* LocationFetcher.swift */,
 				5A497A7626E0AD8100752643 /* Assets.xcassets */,
 				5A497A7B26E0AD8100752643 /* LaunchScreen.storyboard */,
 				5A497A7E26E0AD8100752643 /* Info.plist */,
@@ -157,6 +160,7 @@
 				5A497A8926E0C5B800752643 /* Person.swift in Sources */,
 				5A497A7126E0AD7F00752643 /* AppDelegate.swift in Sources */,
 				5A497A7326E0AD7F00752643 /* SceneDelegate.swift in Sources */,
+				5A497A8B26E0C99A00752643 /* LocationFetcher.swift in Sources */,
 				5A497A8726E0C5A200752643 /* ImagePicker.swift in Sources */,
 				5A497A8526E0C58900752643 /* AddNewPersonView.swift in Sources */,
 				5A497A7526E0AD7F00752643 /* ContentView.swift in Sources */,

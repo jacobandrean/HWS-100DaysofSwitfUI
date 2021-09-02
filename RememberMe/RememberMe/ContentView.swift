@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationView {
             List(people, id: \.self) { person in
                 NavigationLink(
-                    destination: PersonFullImageView(image: image(from: person.imageData), name: person.name),
+                    destination: PersonFullImageView(image: image(from: person.imageData), name: person.name, location: person.location),
                     label: {
                         HStack {
                             image(from: person.imageData)
@@ -67,11 +67,15 @@ struct ContentView: View {
 struct PersonFullImageView: View {
     let image: Image
     let name: String
+    let location: Location?
     var body: some View {
-        image
-            .resizable()
-            .scaledToFit()
-        
-            .navigationBarTitle(name, displayMode: .inline)
+        VStack {
+            Text(name)
+                .font(.headline)
+            Text("\(location?.latitude ?? 0) \(location?.longitude ?? 0)")
+            image
+                .resizable()
+                .scaledToFit()
+        }
     }
 }
