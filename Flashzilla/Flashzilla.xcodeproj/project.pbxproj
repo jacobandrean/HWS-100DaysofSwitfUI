@@ -19,6 +19,9 @@
 		5A48418726E222CA007FBED5 /* TimerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48418626E222CA007FBED5 /* TimerExample.swift */; };
 		5A48418926E223FE007FBED5 /* NotificationCenterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48418826E223FE007FBED5 /* NotificationCenterExample.swift */; };
 		5A48418B26E2285C007FBED5 /* AccessibilityEnvironmentExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48418A26E2285C007FBED5 /* AccessibilityEnvironmentExample.swift */; };
+		5A48418E26E228CF007FBED5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48418D26E228CF007FBED5 /* Card.swift */; };
+		5A48419026E229AF007FBED5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48418F26E229AF007FBED5 /* CardView.swift */; };
+		5AA1BA4726E4FE940092D514 /* EditCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1BA4626E4FE940092D514 /* EditCardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		5A48418626E222CA007FBED5 /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
 		5A48418826E223FE007FBED5 /* NotificationCenterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExample.swift; sourceTree = "<group>"; };
 		5A48418A26E2285C007FBED5 /* AccessibilityEnvironmentExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityEnvironmentExample.swift; sourceTree = "<group>"; };
+		5A48418D26E228CF007FBED5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5A48418F26E229AF007FBED5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5AA1BA4626E4FE940092D514 /* EditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 				5A48416B26E1FBA7007FBED5 /* AppDelegate.swift */,
 				5A48416D26E1FBA7007FBED5 /* SceneDelegate.swift */,
 				5A48416F26E1FBA7007FBED5 /* ContentView.swift */,
+				5A48418F26E229AF007FBED5 /* CardView.swift */,
+				5AA1BA4626E4FE940092D514 /* EditCardsView.swift */,
+				5A48418D26E228CF007FBED5 /* Card.swift */,
 				5A48418C26E22869007FBED5 /* Example */,
 				5A48417126E1FBA8007FBED5 /* Assets.xcassets */,
 				5A48417626E1FBA8007FBED5 /* LaunchScreen.storyboard */,
@@ -171,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA1BA4726E4FE940092D514 /* EditCardsView.swift in Sources */,
 				5A48418526E21085007FBED5 /* TapGestureHitTesting.swift in Sources */,
 				5A48416C26E1FBA7007FBED5 /* AppDelegate.swift in Sources */,
 				5A48416E26E1FBA7007FBED5 /* SceneDelegate.swift in Sources */,
@@ -178,7 +188,9 @@
 				5A48417026E1FBA7007FBED5 /* ContentView.swift in Sources */,
 				5A48418726E222CA007FBED5 /* TimerExample.swift in Sources */,
 				5A48418926E223FE007FBED5 /* NotificationCenterExample.swift in Sources */,
+				5A48418E26E228CF007FBED5 /* Card.swift in Sources */,
 				5A48418326E20EBE007FBED5 /* HapticExample.swift in Sources */,
+				5A48419026E229AF007FBED5 /* CardView.swift in Sources */,
 				5A48418B26E2285C007FBED5 /* AccessibilityEnvironmentExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
