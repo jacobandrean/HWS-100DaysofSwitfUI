@@ -5,6 +5,7 @@
 //  Created by Jacob Andrean on 03/09/21.
 //
 
+import CoreHaptics
 import SwiftUI
 
 extension View {
@@ -22,10 +23,14 @@ struct ContentView: View {
     
     @State private var isActive = true
     
-    @State private var timeRemaining = 100
+    @State private var timeRemaining = 15
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State private var showingEditScreen = false
+    
+    @State private var canRetry = false
+    
+    @State private var engine: CHHapticEngine?
     
     var body: some View {
         ZStack {
@@ -37,7 +42,7 @@ struct ContentView: View {
             VStack {
                 Text("Time: \(timeRemaining)")
                     .font(.largeTitle)
-                    .foregroundColor(.white)
+                    .foregroundColor(timeRemaining <= 10 ? .red : .white)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 5)
                     .background(
@@ -45,11 +50,17 @@ struct ContentView: View {
                             .fill(Color.black)
                             .opacity(0.75)
                     )
+                    .onChange(of: timeRemaining) { newTime in
+                        if newTime <= 10 {
+                            print("bzz")
+                            attackTimeHaptic()
+                        }
+                    }
                 ZStack {
                     ForEach(0..<cards.count, id: \.self) { index in
-                        CardView(card: self.cards[index]) {
+                        CardView(card: self.cards[index]) { isCorrect in
                             withAnimation {
-                                self.removeCard(at: index)
+                                self.removeCard(at: index, isCorrect: isCorrect)
                             }
                         }
                         .stacked(at: index, in: self.cards.count)
@@ -70,6 +81,13 @@ struct ContentView: View {
             
             VStack {
                 HStack {
+                    Toggle("Can Retry?", isOn: $canRetry)
+                        .font(.callout)
+                        .frame(width: 150)
+                        .padding()
+                        .background(Color.black.opacity(0.7))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    
                     Spacer()
                     
                     Button(action: {
@@ -94,7 +112,7 @@ struct ContentView: View {
                     HStack {
                         Button(action: {
                             withAnimation {
-                                self.removeCard(at: self.cards.count - 1)
+                                self.removeCard(at: self.cards.count - 1, isCorrect: false)
                             }
                         }) {
                             Image(systemName: "xmark.circle")
@@ -109,7 +127,7 @@ struct ContentView: View {
                         
                         Button(action: {
                             withAnimation {
-                                self.removeCard(at: self.cards.count - 1)
+                                self.removeCard(at: self.cards.count - 1, isCorrect: true)
                             }
                         }) {
                             Image(systemName: "checkmark.circle")
@@ -147,9 +165,49 @@ struct ContentView: View {
         .onAppear(perform: resetCards)
     }
     
-    func removeCard(at index: Int) {
+    func prepareHaptics() {
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else {
+            return
+        }
+        
+        do {
+            self.engine = try CHHapticEngine()
+            try engine?.start()
+        }
+        catch {
+            print(error)
+        }
+    }
+    
+    func attackTimeHaptic() {
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+        
+        var events = [CHHapticEvent]()
+        
+        for i in stride(from: 0, to: 1, by: 0.1) {
+            let attackTime = CHHapticEventParameter(parameterID: .attackTime, value: Float(i))
+            let event = CHHapticEvent(eventType: .hapticTransient, parameters: [attackTime], relativeTime: i)
+            events.append(event)
+        }
+        
+        do {
+            let pattern = try CHHapticPattern(events: events, parameters: [])
+            let player = try engine?.makePlayer(with: pattern)
+            try player?.start(atTime: 0)
+        } catch {
+            print(error)
+        }
+    }
+    
+    func removeCard(at index: Int, isCorrect: Bool) {
         guard index >= 0 else { return }
-        cards.remove(at: index)
+        let removedCard = cards.remove(at: index)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            if canRetry && !isCorrect {
+                cards.insert(removedCard, at: 0)
+            }
+        }
         
         if cards.isEmpty {
             isActive = false
@@ -157,8 +215,9 @@ struct ContentView: View {
     }
     
     func resetCards() {
+        prepareHaptics()
 //        cards = [Card](repeating: Card.example, count: 10)
-        timeRemaining = 100
+        timeRemaining = 15
         isActive = true
         loadData()
     }
